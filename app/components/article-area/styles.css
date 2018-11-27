@@ -40,7 +40,6 @@
     bottom: 40%;
     left: 50%;
     font-weight: bold;
-    /* HACK: get the correct width */
     display: table;
     transform: translateX(-50%);
     z-index: 12;
