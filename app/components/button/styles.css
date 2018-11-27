@@ -1,0 +1,13 @@
+:import('colors.css') {
+    --button-color: button-color;
+}
+
+.link {
+    width: 100%;
+    color: --button-color;
+    text-transform: uppercase;
+    border: 0.2em solid --button-color;
+    padding: 0.7em 1.4em;
+    font-size: 1.4rem;
+    font-family: Open Sans, sans-serif;
+}

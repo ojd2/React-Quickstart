@@ -1,0 +1,49 @@
+:import('colors.css') {
+    --article-color: article-color;
+}
+:import('typography.css') {
+    --article-font: article-font;
+    --article-size: article-size;
+}
+.wrapper {
+    position: relative;
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+}
+.wrapper::after {
+    content: '';
+    padding-top: 75%;
+    display: inline-block;
+}
+.content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.article {
+    color: --article-color;
+    font-family: --article-font;
+    font-weight: bold;
+    text-align: center;
+    width: 100%;
+    font-size: --article-size;
+}
+.button-wrapper {
+    position: absolute;
+    bottom: 40%;
+    left: 50%;
+    font-weight: bold;
+    /* HACK: get the correct width */
+    display: table;
+    transform: translateX(-50%);
+    z-index: 12;
+    max-width: 90%;
+    text-align: center;
+}

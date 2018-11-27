@@ -1,0 +1,28 @@
+:import('colors.css') {
+    --titles-color: titles-color;
+}
+:import('typography.css') {
+    --titles-font: titles-font;
+    --titles-size: titles-size;
+}
+.title_content {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:200px;
+}
+.title_area {
+    width: 100%;
+    position: relative;
+    display: block;
+    text-transform: uppercase;
+    padding: 0.7em 1.4em;
+    text-align: center;
+}
+.title_style {
+    font-size: --titles-size;
+    font-family: --titles-font;
+    color: --titles-color;
+}
+
